@@ -54,7 +54,7 @@ fn main() {
        // Pipe stdin directly to the writer
     } else {
         for line in stdin.lock().lines() {
-            Message { msg_type: "foobar".to_string(),
+            Message { msg_type: matches.opt_str("type").unwrap(),
                       json: line.unwrap() }.encode(&mut Encoder::new(&mut stdout));
         }
     }
