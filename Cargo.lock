@@ -1,0 +1,42 @@
+[root]
+name = "envoy"
+version = "0.1.0"
+dependencies = [
+ "getopts 0.2.14 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rmp 0.7.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rmp-serialize 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustc-serialize 0.3.16 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "byteorder"
+version = "0.3.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "getopts"
+version = "0.2.14"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "rmp"
+version = "0.7.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "byteorder 0.3.13 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rmp-serialize"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "rmp 0.7.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustc-serialize 0.3.16 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rustc-serialize"
+version = "0.3.16"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+

@@ -2,3 +2,10 @@
 name = "envoy"
 version = "0.1.0"
 authors = ["Darrell Hamilton <darrell.noice@gmail.com>"]
+
+[dependencies]
+getopts = "0.2.14"
+rmp = "0.7.2"
+rmp-serialize = "0.7.0"
+rustc-serialize = "0.3.16"
+
